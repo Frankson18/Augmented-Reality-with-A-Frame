@@ -29,8 +29,7 @@ Both models are licensed under Smithsonian 3D Digitization and provide a high le
 
 This project uses the default **Hiro** and **Kanji** markers provided by AR.js. You can print or display the following markers to trigger the models:
 
-- [Hiro Marker](https://user-images.githubusercontent.com/6317076/27867388-64baee98-6191-11e7-9fbe-586fd79eba9d.png)
-- [Kanji Marker](https://user-images.githubusercontent.com/6317076/27867389-64bdf1ac-6191-11e7-9b1a-63a0dd2e2566.png)
+- [Hiro Marker and Kanji Marker](https://user-images.githubusercontent.com/6317076/27867388-64baee98-6191-11e7-9fbe-586fd79eba9d.png)
 
 ## Educational Purpose
 
