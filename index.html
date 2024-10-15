@@ -1,0 +1,229 @@
+<html>
+   <head>
+      <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+      <script>
+      </script>
+   </head>
+  
+   <body style="margin : 0px; overflow: hidden;">
+     
+      <a-scene embedded arjs="sourceType: webcam;">
+        
+         <a-assets>
+           
+            <a-asset-item 
+               id="woolly-mammoth"
+               src="https://raw.githubusercontent.com/Frankson18/Augmented-Reality-with-A-Frame/refs/heads/main/assets/woolly-mammoth/woolly-mammoth-100k-4096.gltf">
+            </a-asset-item>
+           
+            <a-asset-item 
+               id="Triceratops_horridus_Marsh"
+               src="https://raw.githubusercontent.com/Frankson18/Augmented-Reality-with-A-Frame/refs/heads/main/assets/Triceratops_horridus_Marsh/Triceratops_horridus_Marsh_1889-150k-4096.gltf">
+            </a-asset-item>
+           
+         </a-assets>
+        
+         <a-marker preset="hiro">
+           
+            <a-entity 
+               animation="property: rotation; to: 0 0 360; loop: true; dur: 10000">
+              
+               <a-entity 
+                  rotation="-90 0 0" 
+                  scale="0.5 0.5 0.5" 
+                  position="0 0 0"
+                  gltf-model="#woolly-mammoth"
+                  modify-materials>
+               </a-entity>
+              
+            </a-entity>
+           
+            <a-plane 
+               color="black" 
+               width="2" 
+               height="1.45" 
+               rotation="-90 0 0" 
+               position="2.5 -0.05 -0.05">
+            </a-plane>
+           
+            <a-text 
+               value="Idade Geológica" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.7">
+            </a-text>
+           
+            <a-text 
+               value="Cenozoico - Quaternário" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.6">
+            </a-text>
+           
+            <a-text 
+               value="Nome Publicado" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.4">
+            </a-text>
+           
+            <a-text 
+               value="Mammuthus primigenius (Blumbach)" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.3">
+            </a-text>
+           
+            <a-text 
+               value="Data da Coleta" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.1">
+            </a-text>
+           
+            <a-text 
+               value="1952" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0">
+            </a-text>
+           
+            <a-text 
+               value="Coletor" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.2">
+            </a-text>
+           
+            <a-text 
+               value="Otto Geist" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.3">
+            </a-text>
+           
+            <a-text 
+               value="Local" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.5">
+            </a-text>
+           
+            <a-text 
+               value="Alasca, Estados Unidos, América do Norte" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.6">
+            </a-text>
+           
+         </a-marker>
+        
+         <!----------------------------  Triceratops_horridus_Marsh ----------------------------->
+        
+         <a-marker preset="kanji">
+           
+            <a-entity 
+               animation="property: rotation; to: 0 0 360; loop: true; dur: 10000">
+              
+               <a-entity 
+                  rotation="-90 0 0" 
+                  scale="0.5 0.5 0.5" 
+                  position="0 0 0"
+                  gltf-model="#Triceratops_horridus_Marsh"
+                  modify-materials>
+               </a-entity>
+              
+            </a-entity>
+           
+            <a-plane 
+               color="black" 
+               width="2" 
+               height="1.2" 
+               rotation="-90 0 0" 
+               position="2.5 -0.05 -0.2">
+            </a-plane>
+           
+            <a-text 
+               value="Idade Geológica" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.7">
+            </a-text>
+           
+            <a-text 
+               value="Mesozoico - Cretáceo - Maastrichtiano" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.6">
+            </a-text>
+           
+            <a-text 
+               value="Nome Publicado" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.4">
+            </a-text>
+           
+            <a-text 
+               value="Triceratops horridus Marsh" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.3">
+            </a-text>
+           
+            <a-text 
+               value="Data da Coleta" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 -0.1">
+            </a-text>
+           
+            <a-text 
+               value="1889" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0">
+            </a-text>
+           
+            <a-text 
+               value="Coletor" 
+               color="yellow" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.2">
+            </a-text>
+           
+            <a-text 
+               value="Departamento de Paleobiologia" 
+               color="white" 
+               width="2" 
+               rotation="-90 0 0" 
+               position="1.5 0 0.3">
+            </a-text>
+           
+         </a-marker>
+        
+         <a-entity camera></a-entity>
+        
+      </a-scene>
+     
+   </body>
+  
+</html>
